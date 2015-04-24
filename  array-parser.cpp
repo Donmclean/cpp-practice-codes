@@ -20,7 +20,7 @@ int find_maximum(int a[], int size);
 //gets the average of your array of integer elements
 double compute_average(int a[], int size);
 
-//gets the average of your array of integer elements
+//gets the sum/total of your array of integer elements
 double total(int a[], int size);
 
 //gets the amount of even numbers in your array of integer elements
