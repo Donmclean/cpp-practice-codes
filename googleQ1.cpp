@@ -12,7 +12,7 @@ using namespace std;
 //[5, 1, 2, 4], 8 --> false
 
 
-bool nums_equals_sum (int arr[], int target_value);
+bool nums_equals_sum (int arr[], int size, int target_value);
 
 int main(int argc, char *argv[]) {
 	string answer [] = {"false","true"};
@@ -26,24 +26,26 @@ int main(int argc, char *argv[]) {
 	int arr2 [] = {5, 1, 2, 4};
 	int target2 = 8;
 	
+	//Gets size of array
+	int arr_size = sizeof(arr)/sizeof(int);
+	int arr2_size = sizeof(arr2)/sizeof(int);
+	
 	//Question 1 answer:
-	cout << "Question 1 answer: " << answer[nums_equals_sum(arr, target)] << endl;
+	cout << "Question 1 answer: " << answer[nums_equals_sum(arr, arr_size, target)] << endl;
 	
 	//Question 2 answer:
-	cout << "Question 2 answer: " << answer[nums_equals_sum(arr2, target2)] << endl;
+	cout << "Question 2 answer: " << answer[nums_equals_sum(arr2, arr2_size, target2)] << endl;
 	
 }
 
-bool nums_equals_sum (int arr[], int target_value) {
-	
-	int size = 4; //size of array! can be dynamic if using a list.
+bool nums_equals_sum (int arr[], int size, int target_value) {
 	
 	for (int i = 0; i < size; i++) {
-		for (int j = 0; j < i; j++) {
-			if (arr[i] + arr[j] == target_value) {
-				return true;
+			for (int j = 0; j < i; j++) {
+				if (arr[i] + arr[j] == target_value) {
+					return true;
+				}
 			}
 		}
-	}
 	return false;
 }
