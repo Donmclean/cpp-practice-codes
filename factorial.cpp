@@ -32,8 +32,6 @@ int main ()
 unsigned long factorial(unsigned long n)
 {
     //eg: 5! = 5x4x3x2x1 = 120
-
-    //base case
     //n * factorial(n-1)
 
     if (n < 1) { return 0;}
