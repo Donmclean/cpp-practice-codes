@@ -11,7 +11,7 @@ int binary_search(int arr[], int target, int n);
 
 int main(int argc, char *argv[]) {
 	
-	int arr[] = {0,1,2,3,4,5,6,7,8};
+	int arr[] = {0,1,2,3,4,5,6,7,8,9};
 	int size = sizeof(arr)/sizeof(int);
 	
 	cout << "Enter a target number between 1 & 9" << endl;
