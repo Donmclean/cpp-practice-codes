@@ -14,7 +14,7 @@ void print_array(int arr[], int n);
 
 int main(int argc, char *argv[]) {
 	
-	int arr[] = {43,25,65,76,23,1,23,54,67,100};
+	int arr[] = {43,25,65,76,23,10,23,54,67,1};
 	int size = sizeof(arr)/sizeof(int);
 	
 	//array before sorting
@@ -24,8 +24,8 @@ int main(int argc, char *argv[]) {
 	
 //	choose a sorting algorithm by uncommenting one below
 
-	bubble_sort(arr, size);
-//  my_sort(arr, size);
+//	bubble_sort(arr, size);
+    my_sort(arr, size);
 //	selection_sort(arr, size);
 //	insertion_sort(arr, size);
 
@@ -121,8 +121,7 @@ void insertion_sort(int arr[], int n)
 
 void swap(int& a, int& b)
 {
-	int temp;
-	temp = a;
+	int temp = a;
 	a = b;
 	b = temp;
 }
