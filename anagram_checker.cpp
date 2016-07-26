@@ -31,6 +31,7 @@ bool anagramChecker(string string1, string string2) {
                 {
                     matches++;
                     string2.erase(j,1);
+                    break;
                 }
             }
         }
