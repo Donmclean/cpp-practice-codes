@@ -29,6 +29,7 @@ bool anagramChecker(string string1, string string2) {
                 if (string1[i] == string2[j])
                 {
                     matches++;
+                    string2.erase(j,1);
                 }
             }
         }
