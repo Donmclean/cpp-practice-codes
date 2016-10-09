@@ -47,7 +47,7 @@ int binary_search(int arr[], int target, int n)
 	int midpoint;
 	
 	while (min <= max) {
-		midpoint = getMidPoint(min + max);
+		midpoint = getMidPoint(min, max);
 		
 		if(target == arr[midpoint])
 		{
